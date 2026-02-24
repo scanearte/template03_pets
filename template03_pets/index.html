@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TOMMY | Ayúdame a volver a casa</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --blue:#3992e6;
+  --lightBlue:#e9f2ff;
+  --green:#25D366;
+  --red:#e63946;
+  --softRed:#ffe5e7;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:var(--lightBlue);
+  color:#333;
+}
+
+.container{
+  max-width:500px;
+  margin:auto;
+  padding:25px 20px 40px;
+}
+
+/* ALERTA */
+.alert{
+  background:var(--softRed);
+  color:var(--red);
+  padding:14px;
+  text-align:center;
+  border-radius:20px;
+  font-weight:600;
+  margin-bottom:25px;
+  font-size:15px;
+}
+
+/* IMAGEN */
+.image-wrapper{
+  background:white;
+  border-radius:30px;
+  padding:20px;
+  box-shadow:0 25px 50px rgba(0,0,0,0.06);
+  margin-bottom:25px;
+  text-align:center;
+}
+
+.dog-image{
+  width:100%;
+  height:auto;
+  object-fit:contain;   /* ahora no se recorta */
+  border-radius:20px;
+}
+
+/* NOMBRE */
+.name{
+  text-align:center;
+  margin:10px 0 5px;
+  font-size:32px;
+  font-weight:700;
+  color:var(--blue);
+}
+
+.subtitle{
+  text-align:center;
+  color:#777;
+  margin-bottom:30px;
+  font-size:14px;
+}
+
+/* SECCIÓN */
+.section{
+  margin-bottom:30px;
+}
+
+.section-title{
+  font-weight:600;
+  color:var(--blue);
+  margin-bottom:15px;
+}
+
+/* CAJAS INFO */
+.info-box{
+  background:#FFFFFF;
+  padding:16px;
+  border-radius:20px;
+  margin-bottom:12px;
+  display:flex;
+  justify-content:space-between;
+  font-size:14px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.04);
+}
+
+/* BOTÓN WHATSAPP */
+.whatsapp{
+  display:block;
+  background:var(--green);
+  color:white;
+  text-align:center;
+  padding:18px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:600;
+  margin-top:10px;
+  box-shadow:0 15px 35px rgba(37,211,102,0.3);
+  transition:0.3s;
+}
+
+.whatsapp:hover{
+  transform:scale(1.05);
+}
+
+/* FOOTER CUTE */
+.footer{
+  text-align:center;
+  margin-top:35px;
+  padding:15px;
+  font-size:14px;
+  color:#666;
+  background:white;
+  border-radius:20px;
+  box-shadow:0 10px 20px rgba(0,0,0,0.05);
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="alert">
+    🐾 TOMMY está perdido
+  </div>
+
+  <div class="image-wrapper">
+    <img src="foto-tommy.jpg" alt="TOMMY" class="dog-image">
+  </div>
+
+  <div class="name">TOMMY</div>
+  <div class="subtitle">Poodle • Muy amigable y nervioso</div>
+
+  <div class="section">
+    <div class="section-title">Información</div>
+
+    <div class="info-box">
+      <span>🎂 Edad</span>
+      <span>4 años</span>
+    </div>
+
+    <div class="info-box">
+      <span>🍖 Comida</span>
+      <span>Pollo • Brócoli • Zanahoria • Carne molida</span>
+    </div>
+
+    <div class="info-box">
+      <span>💊 Salud</span>
+      <span>Sin condiciones médicas</span>
+    </div>
+
+    <div class="info-box">
+      <span>👩 Dueña</span>
+      <span>Ale</span>
+    </div>
+
+    <div class="info-box">
+      <span>📍 Ubicación</span>
+      <span>Av. Universidad, esquina Monroy atracabordo. Edificio Acosta Ferro V, Caracas</span>
+    </div>
+  </div>
+
+  <a class="whatsapp"
+     href="https://wa.me/584242205333?text=Hola,%20encontré%20a%20TOMMY%20🐶"
+     target="_blank">
+     💬 Contactar por WhatsApp
+  </a>
+
+  <div class="footer">
+    Gracias por ayudar a TOMMY a volver a casa ❤️
+  </div>
+
+</div>
+
+</body>
+</html>
